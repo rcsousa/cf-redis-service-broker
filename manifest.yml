@@ -1,0 +1,8 @@
+applications:
+- name: redis_broker
+  command: python v2.py
+  path: . 
+  domain: eu-gb.mybluemix.net
+  memory: 256M
+  buildpack: https://github.com/cloudfoundry/cf-buildpack-python#v1.2.0
+  instances: 1

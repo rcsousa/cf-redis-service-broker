@@ -1,0 +1,27 @@
+catalog:
+  services: # catalog must advertise at least one service
+    - id: 2f8f8a99-0ffe-11e4-b690-8438355ef524 
+      name: redis-on-docker 
+      description: Redis on a Docker Container
+      bindable: true
+      tags:
+        - nosql
+      metadata:
+        displayName: Redis on a Docker Container
+        imageUrl:
+        longDescription: Redis on a Docker Container
+        providerDisplayName: Redis on a Docker Container
+        documentationUrl: 
+        supportUrl: 
+      plans: 
+        - id: 843c10ae-0ffe-11e4-9567-8438355ef524 
+          name: free
+          description: Redis on a Docker Container
+          metadata:
+            bullets:
+              - Redis on a Docker Container
+            costs:
+              - amount:
+                  usd: 0.0
+                unit: MONTHLY
+            displayName: Public
