@@ -2,7 +2,10 @@
 
 To deploy this service broker on bluemix, follow these steps:
 
-1. Clone this repository : git clone https://github.com/rcsousa/cf-redis-service-broker.git
+1. Clone this repository: 
+
+	git clone https://github.com/rcsousa/cf-redis-service-broker.git
+
 2. Update v2.py with your host info:
 	
 	DOCKER_HOST = "<<YOUR DOCKER HOST>>:<<DOCKER API PORT>>"
