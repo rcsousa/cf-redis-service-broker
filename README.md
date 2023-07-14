@@ -1,4 +1,4 @@
-# cf-redis-service-broker
+# cf-redis-service-broker .
 
 To deploy this service broker on bluemix, follow these steps:
 
