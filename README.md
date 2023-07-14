@@ -1,21 +1,40 @@
-# cf-redis-service-broker .
+# Service Broker for Redis using Docker
 
-To deploy this service broker on bluemix, follow these steps:
+This is a Python script that implements a service broker for Redis using Docker. It is designed to be used with Cloud Foundry, but can be used with any platform that supports service brokers.
 
-1. Clone this repository: 
+## Dependencies
 
-	git clone https://github.com/rcsousa/cf-redis-service-broker.git
+This script requires the following dependencies:
 
-2. Update v2.py with your host info:
-	
-	DOCKER_HOST = "<<YOUR DOCKER HOST>>:<<DOCKER API PORT>>"
-	REDIS_HOST = "<<YOUR REDIS HOST>>"
+- Python 2.7
+- Bottle
+- Docker
+- PyYAML
 
-3. Update the manifest.yml file with you app information (name and domain depending on your bluemix region)
-4. login to your bluemix account:
+## Installation
 
-	ie: cf login api.eu-gb.mybluemix.net
+To install the dependencies, run the following command:
 
-5. Publish your service broker:
+```
+pip install -r requirements.txt
+```
 
-	cf push
+## Usage
+
+To run the service broker, execute the following command:
+
+```
+python service_broker.py
+```
+
+By default, the service broker will listen on port 9999. You can change this by setting the `VCAP_APP_PORT` environment variable.
+
+## Contributing
+
+If you want to contribute to this project, please fork the repository and submit a pull request. We welcome all contributions.
+
+## References
+
+- [Bottle documentation](https://bottlepy.org/docs/dev/)
+- [Docker SDK for Python documentation](https://docker-py.readthedocs.io/en/stable/)
+- [PyYAML documentation](https://pyyaml.org/wiki/PyYAMLDocumentation)
