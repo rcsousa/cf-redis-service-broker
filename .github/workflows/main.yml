@@ -3,7 +3,7 @@ name: Explain Code and Update README
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   explain_code:
