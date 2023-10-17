@@ -1,6 +1,7 @@
 # coding: utf8.
 from bottle import route, run, auth_basic, response
 import os, traceback, docker, yaml, json
+import requests
 
 
 PORT = int(os.getenv('VCAP_APP_PORT', '9999'))
